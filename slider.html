@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .srs_calculate_box .srs_Customer_sec input[type=range], .srs_calculate_box .srs_Customer_sec input[type=range]:focus{
+            -webkit-appearance: none;
+    
+    background: #fff linear-gradient(#244199,#244199) no-repeat;
+    background-size: 20% 100%;
+    border: 1px solid #e7e9f1;
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    width: 100%;
+        }
+        .srs_calculate_box {
+    background: #fff;
+    border: 1px solid #e0e3ec;
+    border-radius: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.03);
+    padding: 42px;
+    position: relative;
+}
+.srs_calculate_box .srs_Customer_sec{
+    margin-bottom: 25px;
+}
+.srs_calculate_box .srs_Customer_sec label {
+    display: inline-block;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.srs_calculate_box .srs_Customer_sec span {
+    color: #244199;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+}
+.srs_calculate_box .srs_Price_sec input[type=range], .srs_calculate_box .srs_Price_sec input[type=range]:focus{
+            -webkit-appearance: none;
+    
+    background: #fff linear-gradient(#244199,#244199) no-repeat;
+    background-size: 10% 100%;
+    border: 1px solid #e7e9f1;
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    width: 100%;
+        }
+.srs_calculate_box .srs_Price_sec label {
+    display: inline-block;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.srs_calculate_box .srs_Price_sec span {
+    color: #244199;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+}
+.srs_calculate_box .srs_Commission_sec{
+    margin-top: 25px;
+}
+.srs_calculate_box .srs_Commission_sec input[type=range], .srs_calculate_box .srs_Commission_sec input[type=range]:focus{
+            -webkit-appearance: none;
+    
+   /* background: #fff linear-gradient(#244199,#244199) no-repeat; */
+   
+    border: 1px solid #e7e9f1;
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    width: 100%;
+        }
+.srs_calculate_box .srs_Commission_sec label {
+    display: inline-block;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.srs_calculate_box .srs_Commission_sec span {
+    color: #244199;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+}
+.srs_calculate_box .srs_total{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.srs_calculate_box .srs_total p{
+    color: #244199;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.srs_calculate_box .srs_total h3{
+    margin: 0;
+    font-family: "Popins", sans-serif;
+    color: #244199;
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 31px;
+
+}
+.srs_calculate_box .btn-1{
+    
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 0.4em;
+    background-color: #fdd128;
+    color: #000000;
+    padding: 0.594em 1.3em;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: auto;
+    &:hover{
+        border-color: var(--u-yellow);
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+}
+.srs_calculate_box .srs-btn-start{
+    display: flex;
+    justify-content: center;
+}
+.srs_calculate_box .btn-1-pulse{
+    animation: btn-pulse 1.5s infinite;
+    will-change: transform;
+    box-shadow: 0 0 0 0 #ffd226;
+
+    &:hover{
+        animation-duration: 3s;
+    }
+}
+@keyframes btn-pulse {
+    0% {
+        transform: scale(.9)
+    }
+    70% {
+        box-shadow: 0 0 0 15px transparent;
+        transform: scale(1)
+    }
+    to {
+        box-shadow: 0 0 0 0 transparent;
+        transform: scale(.9)
+    }
+}
+.srs_calculate_box .srs_form_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 214px;
+}
+
+    </style>
+</head>
+<body>
+    <form class="srs_calculate_box">
+        <img class="srs_form_image" src="https://www.janets.org.uk/wp-content/uploads/2024/03/raket-2.svg" alt="">
+        <div class="srs_Customer_sec">
+            <label for="Customer">How many customers will you have?</label>
+            <input name="Customer" oninput='change()' id="input" type="range" max="1000" min="1" value="200" >
+        <span class="srs_cus">
+            200
+        </span>
+        </div>
+        <div class="srs_Price_sec">
+            <label for="Price">What will you charge for what you create?</label>
+            <input name="Price" oninput='change2()' id="input2" type="range" max="1000" min="1" value="100" >
+            <span>
+                $
+            </span>
+        <span class="srs_price">
+            100
+        </span>
+        <span>/month</span>
+        </div>
+        <div class="srs_Commission_sec">
+            <label for="Commission">Commission</label>
+            <input name="Commission" oninput='change3()' id="input3" type="range" max="1000" min="0" value="0" >
+            
+        <span class="srs_Commission">
+            0
+        </span>
+        
+        </div>
+        <div class="srs_total">
+            <p>
+                Annual Income
+            </p>
+            <h3>
+                <span>$</span>
+                <span class="srs_total_amount">0</span>
+            </h3>
+        </div>
+        <div class="srs-btn-start">
+            <a href="#" class="btn-1 btn-1-pulse start_free_trial_home_2">Start free trial</a>
+        </div>
+        
+
+        
+    </form>
+
+
+    <script>
+    let value1 = 200;
+    let value2 = 100;
+    let value3 = 0;
+
+    function change() {
+        value1 = document.getElementById("input").value;
+        document.getElementsByClassName("srs_cus")[0].innerHTML = value1;
+        document.getElementById("input").style.background = "#fff linear-gradient(#244199,#244199) no-repeat";
+        let backgroundSize = value1 / 10 + "% 100%";
+        document.getElementById("input").style.backgroundSize = backgroundSize;
+
+        calculateTotal();
+    }
+
+    function change2() {
+        value2 = document.getElementById("input2").value;
+        document.getElementsByClassName("srs_price")[0].innerHTML = value2;
+        document.getElementById("input2").style.background = "#fff linear-gradient(#244199,#244199) no-repeat";
+        let backgroundSize = value2 / 10 + "% 100%";
+        document.getElementById("input2").style.backgroundSize = backgroundSize;
+
+        calculateTotal();
+    }
+
+    function change3() {
+        value3 = document.getElementById("input3").value;
+        document.getElementsByClassName("srs_Commission")[0].innerHTML = value3;
+        document.getElementById("input3").style.background = "#fff linear-gradient(#244199,#244199) no-repeat";
+        let backgroundSize = value3 / 10 + "% 100%";
+        document.getElementById("input3").style.backgroundSize = backgroundSize;
+
+        calculateTotal();
+    }
+calculateTotal();
+    function calculateTotal() {
+        const total = value1 * value2 * 12;
+    const formattedTotal = total.toLocaleString(); 
+    console.log(formattedTotal);
+    document.getElementsByClassName("srs_total_amount")[0].innerHTML = formattedTotal;
+    }
+</script>
+</body>
+</html>
