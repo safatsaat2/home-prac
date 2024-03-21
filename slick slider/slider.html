@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      
+      .srs_content_div {
+        border-bottom: 1px solid #e8e4d9;
+      }
+      .srs_content_div .srs_item_div{
+        display: flex;
+        align-items: start;
+        gap:47px;
+      }
+      .srs_content_div .srs_item_div img{
+        max-width: 470.688px;
+        width: 100%;
+    }
+    .srs_content_div .srs_item_div h3{
+        font-family: "Georgia", sans-serif;
+        font-size: 30px;
+        line-height: 39px;
+        color: #0f1422;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .srs_content_div .srs_item_div p{
+        font-family: "Georgia", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0f1422;
+        margin: 0;
+;
+    }
+    .srs_content_div .slick-arrow.slick-hidden{
+      display: block !important;
+    }
+    .slider-nav{
+      margin-top:24px;
+    }
+    .slider-nav .slick-current{
+background: #f0ede6;
+    }
+    .slider-nav div{
+      font-family:  "Georgia", serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #0f1422;
+    line-height: 24px;
+
+    }
+    .slider-nav .srs_dot{
+      padding: 9px 10px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    .slider-nav .srs_dot span{
+      font-family: "Trebuchet MS";
+      font-size: 19px;
+      font-weight: 800;
+      margin-right: 16px;
+    }
+    @media (max-width:1024px){
+     .srs_pagenation .slick-track{
+        display: flex;
+        flex-direction: column;
+      }
+      .srs_pagenation  .slick-track .slick-slide{
+        width: 100% !important;
+      }
+      .slider-nav .srs_dot{
+        justify-content: start;
+      }
+    }
+    @media (max-width:767px){
+      .srs_content_div .srs_item_div img{
+        display: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="srs_content_div">
+      <div class="slider-for">
+        <div>
+          <div class="srs_item_div">
+            <div>
+              <h3>We are all learners too</h3>
+              <p>
+                Learning is our passion. We recognise the importance of personal
+                development not only for our customers but for ourselves too. We
+                see through the screen and recognise our learners as
+                individuals, just like us, and we continually strive to deliver
+                better quality training for everyone.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://highskilltraining.co.uk/wp-content/uploads/2024/03/values-learners-too.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="srs_item_div">
+            <div>
+              <h3>We build our company together </h3>
+              <p>
+                Everyone can make a difference, regardless of job title and we empower our team mates to find their part in the company mission. More can be achieved when we work together and our goals are always centered around what's right for the learner.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://highskilltraining.co.uk/wp-content/uploads/2024/03/values-build-company.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="srs_item_div">
+            <div>
+              <h3>We are a team beyond our own four walls </h3>
+              <p>
+                We strive to create an environment where people feel comfortable to bring their whole selves to work. Trust and respect are second nature and our support for each other extends further than the office. Our team includes the partnerships we build with like-minded organisations and individuals who share our values.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://highskilltraining.co.uk/wp-content/uploads/2024/03/values-beyond-walls.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="srs_item_div">
+            <div>
+              <h3>We leave things better than we found them</h3>
+              <p>
+                We believe in continual improvement and always look for better ways to serve our learners. Our team are trusted to deliver to the high standards we have set for ourselves across all areas of the business. We are committed to doing our best every day, not just for our learners but also for our community and our environment.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://highskilltraining.co.uk/wp-content/uploads/2024/03/values-leave-better.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+      </div>
+      <div class="srs_arrow">
+        <i aria-hidden="true" class="eicon-chevron-left next"></i>
+        <i aria-hidden="true" class="eicon-chevron-right prev"></i>
+
+    </div>
+      
+    </div>
+    <div class="srs_pagenation">
+      <div class="slider-nav">
+        <div class="srs_dot"><span>01.</span>We are all learners too</div>
+        <div class="srs_dot"><span>02.</span>We build our company together</div>
+        <div class="srs_dot"><span>03.</span>We are a team beyond our own four walls</div>
+        <div class="srs_dot"><span>04.</span>We leave things better than we found them</div>
+        
+  
+      </div>
+    </div>
+    
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+          $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.slider-nav',
+      prevArrow: $('.srs_arrow .prev'), 
+          nextArrow: $('.srs_arrow .next') 
+  });
+  $('.slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 0,
+      asNavFor: '.slider-for',
+      dots: true,
+      arrows: true,
+      centerMode: true,
+      focusOnSelect: true,
+      prevArrow: $('.srs_arrow .prev'), 
+          nextArrow: $('.srs_arrow .next')  
+  });
+      </script>
+    <!-- <script>
+      $(document).ready(function(){
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          fade: true,
+          asNavFor: ".slider-nav",
+          loop: false,
+          prevArrow: $('.srs_arrow .prev'), // Corrected selector
+          nextArrow: $('.srs_arrow .next')  // Corrected selector
+        });
+    
+        $(".slider-nav").slick({
+          slidesToShow: 4,
+          slidesToScroll: 0, // Change slidesToScroll to 1 to move one slide at a time
+          asNavFor: ".slider-for",
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          loop: false,
+          draggable: false, // Disable dragging of slides
+          swipeToSlide: false, // Disable swiping to slide
+    
+          prevArrow: $('.srs_arrow .prev'), // Corrected selector
+          nextArrow: $('.srs_arrow .next')  // Corrected selector
+        });
+    
+        // Handle next button click for slider-for
+        $(".srs_arrow .next").click(function(){
+          $(".slider-for").slick('slickNext');
+        });
+    
+        // Handle prev button click for slider-for
+        $(".srs_arrow .prev").click(function(){
+          $(".slider-for").slick('slickPrev');
+        });
+      });
+    </script> -->
+  </body>
+</html>
